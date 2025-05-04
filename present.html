@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Майские праздники в России – 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fbfd;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .banner {
+      width: 100%;
+      max-height: 180px;
+      overflow: hidden;
+    }
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2em;
+      color: #5a2ea6;
+      margin-top: 0;
+    }
+    input[type="text"] {
+      display: block;
+      margin: 0 auto 20px;
+      padding: 10px;
+      width: 90%;
+      max-width: 500px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    table {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto 30px;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    th, td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+    th {
+      background-color: #ede7f6;
+      color: #5a2ea6;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    @media (max-width: 600px) {
+      table, th, td {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+    .invite {
+      background-color: #4b0082; /* Wildberries purple */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+    .invite a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <img src="d6a9fee7-6636-4da5-b3d0-bfd5741686c0.png" alt="Баннер Sokoll">
+  </div>
+
+  <header>
+    <h1>Майские праздники в России – 2025</h1>
+    <input type="text" id="searchInput" placeholder="Поиск по дате, названию или типу...">
+  </header>
+
+  <table id="holidayTable">
+    <thead>
+      <tr>
+        <th>Дата</th>
+        <th>Праздник</th>
+        <th>Тип</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1 мая</td><td>Праздник Весны и Труда</td><td>Официальный выходной</td></tr>
+      <tr><td>2 мая</td><td>День Георгия Победоносца</td><td>Церковный праздник</td></tr>
+      <tr><td>5 мая</td><td>День водолаза</td><td>Профессиональный праздник</td></tr>
+      <tr><td>7 мая</td><td>День радио</td><td>Профессиональный праздник</td></tr>
+      <tr><td>8 мая</td><td>День памяти и примирения</td><td>Памятная дата</td></tr>
+      <tr><td>9 мая</td><td>День Победы</td><td>Официальный выходной</td></tr>
+      <tr><td>10 мая</td><td>День Героя Советского Союза</td><td>Памятная дата</td></tr>
+      <tr><td>12 мая</td><td>Перенос выходного за 9 мая</td><td>Выходной день</td></tr>
+      <tr><td>13 мая</td><td>День черноморского флота</td><td>Военно-морской праздник</td></tr>
+      <tr><td>15 мая</td><td>Международный день семьи</td><td>Международный праздник</td></tr>
+      <tr><td>17 мая</td><td>День электросвязи</td><td>Международный праздник</td></tr>
+      <tr><td>18 мая</td><td>Международный день музеев</td><td>Международный праздник</td></tr>
+      <tr><td>21 мая</td><td>День полярника</td><td>Профессиональный праздник</td></tr>
+      <tr><td>24 мая</td><td>День славянской письменности и культуры</td><td>Культурный праздник</td></tr>
+      <tr><td>25 мая</td><td>День филолога</td><td>Профессиональный праздник</td></tr>
+      <tr><td>25 мая</td><td>День химика</td><td>Профессиональный праздник</td></tr>
+      <tr><td>27 мая</td><td>День библиотек</td><td>Профессиональный праздник</td></tr>
+      <tr><td>28 мая</td><td>День пограничника</td><td>Профессиональный праздник</td></tr>
+      <tr><td>29 мая</td><td>День ветеранов таможенной службы</td><td>Профессиональный праздник</td></tr>
+      <tr><td>31 мая</td><td>День без табака</td><td>Международный праздник</td></tr>
+    </tbody>
+  </table>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const table = document.getElementById('holidayTable');
+    const rows = table.getElementsByTagName('tr');
+    searchInput.addEventListener('keyup', function () {
+      const filter = this.value.toLowerCase();
+      for (let i = 1; i < rows.length; i++) {
+        const row = rows[i];
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(filter) ? '' : 'none';
+      }
+    });
+  </script>
+
+  <!-- Приглашение в Telegram -->
+  <div class="invite">
+    <p><strong>Присоединяйтесь к нашему Telegram-каналу!</strong></p>
+    <p>Не пропустите уникальные розыгрыши, акции и специальные предложения! Будьте в курсе всех новинок и выгодных предложений — подпишитесь прямо сейчас и участвуйте!</p>
+    <a href="https://t.me/wb_support4" target="_blank">Присоединиться к каналу</a>
+  </div>
+
+</body>
+</html>
